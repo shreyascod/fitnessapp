@@ -1,0 +1,538 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("background.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,.2); 
+    overflow-x: hidden;
+    background-color:rgb(58, 28, 100);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+}
+
+.navList{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10vw;
+    gap: 50px;
+}
+
+.navList li {
+    list-style: none;  
+}
+
+.navList li:hover {
+    color: rgba(149, 102, 214, 1);
+    cursor: pointer;
+}
+
+.headerLogo {
+    margin-left: 2vw;
+    width: 80px;
+    height: auto;
+    color: rgba(149, 102, 214, 1);
+    background: -webkit-linear-gradient(#9c47fc, #e7e7e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footerLogo {
+    margin-left: 2vw;
+    width: 80px;
+    height: auto;
+    color: rgba(149, 102, 214, 1);
+    background: -webkit-linear-gradient(#9c47fc, #e7e7e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: start;
+}
+
+.mainSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+}
+
+.leftContainer { 
+    margin-left: 10vw;
+    color: white;
+    margin-top: -20vh;
+}
+
+.leftContainer h1{ 
+    font-size: 40px;
+    }
+
+.leftContainer h2{ 
+    font-size: 25px;
+    }
+
+.leftContainer p{ 
+    font-size: 15px;
+    font-weight: 300;
+    width: 30vw;
+    }
+
+.callToActionButton {
+    color: white;
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(149, 102, 214, 1);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.callToActionButton:hover {
+    background-color: white;
+    color: rgba(149, 102, 214, 1);
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.leftContainer button {
+    font-size: 20px;
+    width: 140px;
+    height: 40px;   
+    margin-top: 20px;
+}
+
+.logInButton {
+    color:rgba(149, 102, 214, 1);
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 700;
+    font-size: 15px; 
+}
+
+.logInButton:hover {
+    background-color:rgba(149, 102, 214, 1);
+    color: white;
+    cursor: pointer;
+    transition: 0.7s ease; 
+}
+
+footer{ 
+    height:auto;
+    width: 100vw;
+    background-color: rgb(58, 28, 100);
+    display: flex;
+    flex-direction: column;
+}
+
+.upperFooter {
+    height: auto;
+    padding-bottom: 3vh;
+    width: 100vw;
+    border-top: solid 1px rgba(255, 255, 255, 0.082);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.082);
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    gap: 100px;
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.lowerFooter {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: rgba(255, 255, 255, 0.781);
+
+}
+
+.social-icons {
+    font-size: 20px;
+}
+
+.social-icons:hover {
+    color: rgba(149, 102, 214, 1);
+    cursor: pointer; 
+}   
+.upperFooter li  { 
+    list-style: none;  
+}
+
+.upperFooter li:hover  { 
+    color: rgba(149, 102, 214, 1);
+    cursor: pointer; 
+}
+
+.newsletter button {
+    padding: 3px; 
+}
+
+.newsletter input {
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-indent: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: rgba(149, 102, 214, 1);
+}
+
+input:focus {
+    outline: none;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+} 
+
+.lowerFooter p {
+    font-size: 12px;
+}
+
+.contactSection {
+    height:100vh;
+    width: 100vw;
+    background-color:rgb(58, 28, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactField {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+iframe { 
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm input {
+    width: 250px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;   
+    border: none;
+    border-bottom:1px solid white ;
+    
+}
+
+.contactForm input::placeholder {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactForm h3 {
+    color: white;
+    font-size: 25px;
+    margin-top: 0;
+}
+.contactForm textarea {
+    width: 250px;
+    height: 60px;
+    font-size: 15px;
+    background-color: transparent;  
+    border: none;
+    border-bottom:1px solid white;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactForm textarea::placeholder {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactForm textarea:focus {
+    outline: none;
+}
+
+.contactField button {
+    width: 255px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(149, 102, 214, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menuButton {
+    display: none;
+}
+
+.buttonUp {
+    position: fixed;
+    top: 90%;
+    right:10%;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: transparent;  
+    color:white;
+}
+
+.buttonUp:hover {
+    cursor: pointer;
+    color:rgba(149, 102, 214, 1);
+    background-color:white;
+    transition: 0.7s ease;
+}
+
+.signUpModal {
+    position: absolute;
+    /*top:calc(50% - 200px);
+    left:calc(50% - 200px);*/
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(0, 0, 0, 0.871);
+    border-radius:10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    gap: 30px;
+}
+ 
+.signUpModal input {
+    width: 300px;
+    height: 25px;  
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: rgba(149, 102, 214, 1);
+    font-size: 15px;
+}
+
+
+.signUpModal .closeModalButton {
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    border: none;
+    background-color: transparent;  
+}
+
+.signUpModal .closeModalButton:hover {
+    cursor: pointer;
+    color: rgba(149, 102, 214, 1);   
+}
+
+.signUpModal p {
+    margin-top:-25px;
+    color: white;
+}
+
+.signUpModal .logInLink {
+    font-weight: bold;
+    color: rgba(149, 102, 214, 1); 
+}
+
+.signUpModal button {
+    padding: 10px;
+    font-size: 20px;
+    width: 250px;
+    height: auto;
+    margin-top: -5px;
+}
+
+.dark-mode {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .814);
+   }  /* why does not darken? */
+
+.dark-mode .contactSection {
+    background-color: black;  
+}
+
+.dark-mode .footer {
+    background-color: black;  
+} 
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        overflow-x: none;
+    }
+
+    body {
+        position: relative;
+        background-image: none;
+        background-color:rgb(58, 28, 100);
+        box-shadow: none;
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .navigation {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menuButton {
+        margin-right: 0vw;
+        display: flex;
+        font-size: 30px;
+        margin-top: 4vh;
+    }
+
+    .headerLogo {
+        margin-top: 4vh;
+    }
+
+    .navList {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        display:none;
+    }
+
+    .navList li {
+        gap: 0;
+    }
+
+    .mainSection{
+        height:80vh;
+    }
+
+    .contactSection {
+        height: 60vh;
+    }
+
+    .leftContainer {
+        margin-top: 0vh;
+    }
+
+    iframe{ 
+        display: none;
+    }
+
+   .headerLogo {
+        width: 70px;
+        margin-left: 0vw;
+    }
+
+    .footerLogo {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .upperFooter {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: top;
+        height: auto;
+        padding-bottom: 4vh;
+        gap: 20px;
+    }
+
+    .upperFooter .upperFooterSection {
+        width: 100px;
+        text-align: center;
+    }
+
+    .lowerFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .leftContainer { 
+        margin-right: 10vw;
+    }
+
+    .leftContainer p { 
+        font-size: 15px;
+        font-weight: 300;
+        width: 80vw;
+    }
+
+    .leftContainer h2{ 
+        font-size: 20px;
+    }
+
+    .visibility .navList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .visibility .navigation {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topMobileButtons {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .dark-mode .navigation {
+        background-color: rgb(192, 11, 11);  
+    } 
+    
+    .dark-mode .mainSection {
+        background-color: black;  
+    } 
+}
